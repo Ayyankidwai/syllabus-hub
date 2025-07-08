@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        img, video, audio {
+            max-width: 50%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Media Elements</h1>
+        <nav>
+            <ul>
+                <li><a href="#images">Images</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#audio">Audio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="images">
+            <h2>Images</h2>
+            <p>Images play a vital role in enhancing the visual appeal of a webpage. They can be used to convey information, add context to textual content, or simply make the site more engaging. The <code>&lt;img&gt;</code> tag is used to embed images in HTML. Here’s an example:</p>
+            <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Example Image">
+            <p>The above image is embedded using the <code>&lt;img&gt;</code> tag with a source URL. The <code>alt</code> attribute provides alternative text that is displayed if the image cannot be shown.</p>
+        </section>
+
+        <section id="videos">
+            <h2>Videos</h2>
+            <p>Videos are an effective way to provide visual and auditory content on your site. HTML5 introduces the <code>&lt;video&gt;</code> element, which allows you to embed videos directly into your web pages without the need for plugins like Flash.</p>
+            <video controls>
+                <source src="samplevideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>The above video is embedded using the <code>&lt;video&gt;</code> tag. The <code>controls</code> attribute adds play, pause, and volume controls to the video player.</p>
+            <p>You can also customize the video playback by adding attributes like <code>autoplay</code>, <code>loop</code>, and <code>muted</code>.</p>
+        </section>
+
+        <section id="audio">
+            <h2>Audio</h2>
+            <p>Audio elements can be embedded in web pages to provide music, sound effects, or spoken content. The <code>&lt;audio&gt;</code> element in HTML5 allows you to embed audio files with ease.</p>
+            <audio controls>
+                <source src="sample-6s.mp3" type="audio/mp3">
+                <source src="sample-6s.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <p>The above audio file is embedded using the <code>&lt;audio&gt;</code> tag. It includes multiple <code>&lt;source&gt;</code> elements to ensure compatibility with different browsers and audio formats. The <code>controls</code> attribute adds play, pause, and volume controls.</p>
+            <p>Similar to video, you can use attributes like <code>autoplay</code> and <code>loop</code> to control the playback behavior.</p>
+        </section>
+    </main>
+
+</body>
+</html>

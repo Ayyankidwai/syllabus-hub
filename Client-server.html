@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client-Server Model</title>
+    <link rel="stylesheet" href="./style.css"> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h2, h3, h4 {
+            color: #0056b3;
+            
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="client-server">
+    <div class="content">
+        <h4 class="bright">Client-Server Model</h4>
+        <p>  
+            Client-server architecture is a computer network structure where multiple clients (remote processors) request and receive services from a centralized server (host computer). 
+            Client computers provide an interface for users to request services from the server and display the results returned. Servers await requests from clients and respond accordingly.
+            Ideally, a server provides a standardized, transparent interface so that clients are unaware of the underlying system (hardware and software) providing the service.
+            Clients are often situated at workstations or personal computers, while servers are located on more powerful machines elsewhere on the network.
+            This computing model is effective when clients and servers have distinct tasks. For example, in hospital data processing, a client computer can enter patient information 
+            while the server manages the database where the information is stored. Many clients can access the server simultaneously, and a client computer can perform other tasks like sending emails.
+            Unlike the old mainframe model, where a centralized mainframe performed all tasks for its "dumb" terminals, the client-server model treats client and server computers as independent devices.
+        </p>
+
+        <h2>How the Client-Server Model Works</h2>
+        <p>
+            <strong>Client:</strong> In digital terms, a Client is a computer (Host) capable of receiving information or using a service from service providers (Servers).
+            <br>
+            <strong>Server:</strong> A Server is a remote computer that provides information or access to services.
+        </p>
+        <img src="Client-Server-Model.webp" alt="Client-Server Model">
+
+        <h2>How the Browser Interacts with the Server</h2>
+        <h3>Steps to Follow:</h3>
+        <ul>
+            <li>User enters the URL (Uniform Resource Locator) of the website or file. The Browser requests the DNS (DOMAIN NAME SYSTEM) Server.</li>
+            <li>DNS Server looks up the address of the WEB Server.</li>
+            <li>The DNS Server responds with the IP address of the WEB Server.</li>
+            <li>Browser sends an HTTP/HTTPS request to the WEB Server’s IP (provided by the DNS server).</li>
+            <li>The Server sends the necessary files for the website.</li>
+            <li>The Browser renders the files and displays the website using the DOM (Document Object Model) interpreter, CSS interpreter, and JS Engine (collectively known as the JIT or Just-In-Time Compilers).</li>
+        </ul>
+        <img src="Client-Server-Model-2.png" alt="Client Server Request and Response">
+
+        <h2>Advantages of the Client-Server Model</h2>
+        <ol>
+            <li>Centralized system with all data in a single place.</li>
+            <li>Cost-efficient, with lower maintenance costs and data recovery options.</li>
+            <li>The capacity of Clients and Servers can be adjusted separately.</li>
+        </ol>
+
+        <h2>Disadvantages of the Client-Server Model</h2>
+        <ol>
+            <li>Clients are prone to viruses, Trojans, and worms if present in or uploaded to the Server.</li>
+            <li>Servers are vulnerable to Denial of Service (DOS) attacks.</li>
+            <li>Data packets may be spoofed or modified during transmission.</li>
+        </ol>
+
+        <h3>Conclusion</h3>
+        <p>
+            Client-server architecture consolidates resources on servers for greater control and security, allows for flexible client options, and relies on a robust network for scalability and efficiency. 
+            While there are cost implications, the client-server model remains fundamental and continues to evolve with trends such as cloud computing.
+        </p>
+    </div>
+</body>
+</html>

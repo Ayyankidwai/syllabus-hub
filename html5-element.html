@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 15px 0;
+        }
+        ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .code-example {
+            background-color: #f9f9f9;
+            border-left: 5px solid #4CAF50;
+            padding: 10px;
+            margin: 20px 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Elements</h1>
+    </header>
+
+    <nav>
+        <a href="#headings">Headings</a>
+        <a href="#paragraphs">Paragraphs</a>
+        <a href="#links">Links</a>
+        <a href="#lists">Lists</a>
+        <a href="#tables">Tables</a>
+    </nav>
+
+    <section id="headings">
+        <h2>HTML Headings</h2>
+        <p>
+            Headings are used to create titles or subtitles on a webpage. HTML offers six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>. The <code>&lt;h1&gt;</code> element defines the most important heading, and <code>&lt;h6&gt;</code> defines the least important one.
+        </p>
+        <div class="code-example">
+            <code>
+                &lt;h1&gt;This is an H1 heading&lt;/h1&gt;<br>
+                &lt;h2&gt;This is an H2 heading&lt;/h2&gt;<br>
+                &lt;h3&gt;This is an H3 heading&lt;/h3&gt;<br>
+                &lt;h4&gt;This is an H4 heading&lt;/h4&gt;<br>
+                &lt;h5&gt;This is an H5 heading&lt;/h5&gt;<br>
+                &lt;h6&gt;This is an H6 heading&lt;/h6&gt;
+            </code>
+        </div>
+    </section>
+
+    <section id="paragraphs">
+        <h2>HTML Paragraphs</h2>
+        <p>
+            Paragraphs are used to define blocks of text in HTML. The <code>&lt;p&gt;</code> element is used to create a paragraph.
+        </p>
+        <div class="code-example">
+            <code>
+                &lt;p&gt;This is a paragraph of text in HTML.&lt;/p&gt;
+            </code>
+        </div>
+    </section>
+
+    <section id="links">
+        <h2>HTML Links</h2>
+        <p>
+            Links are used to create hyperlinks in HTML. The <code>&lt;a&gt;</code> element is used to create a link, and the <code>href</code> attribute specifies the URL of the page the link goes to.
+        </p>
+        <div class="code-example">
+            <code>
+                &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+            </code>
+        </div>
+    </section>
+
+    <section id="lists">
+        <h2>HTML Lists</h2>
+        <p>
+            Lists are used to group related items. HTML supports ordered lists (<code>&lt;ol&gt;</code>) and unordered lists (<code>&lt;ul&gt;</code>), with list items defined using the <code>&lt;li&gt;</code> element.
+        </p>
+        <div class="code-example">
+            <code>
+                &lt;ul&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+                &lt;/ul&gt;<br><br>
+
+                &lt;ol&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br>
+                &nbsp;&nbsp;&lt;li&gt;Third item&lt;/li&gt;<br>
+                &lt;/ol&gt;
+            </code>
+        </div>
+    </section>
+
+    <section id="tables">
+        <h2>HTML Tables</h2>
+        <p>
+            Tables are used to display tabular data. The <code>&lt;table&gt;</code> element is used to create a table, and it contains rows (<code>&lt;tr&gt;</code>), headers (<code>&lt;th&gt;</code>), and data cells (<code>&lt;td&gt;</code>).
+        </p>
+        <div class="code-example">
+            <code>
+                &lt;table&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;City&lt;/th&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;30&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;New York&lt;/td&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &nbsp;&nbsp;&lt;tr&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jane&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;25&lt;/td&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Los Angeles&lt;/td&gt;<br>
+                &nbsp;&nbsp;&lt;/tr&gt;<br>
+                &lt;/table&gt;
+            </code>
+        </div>
+    </section>
+</body>
+</html>

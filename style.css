@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(pexels-apasaric-325185.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: system-ui;
+}
+h1{
+    text-align: center;
+    font-family: century ;
+}
+
+ul {
+    list-style-type: none;
+}
+/*
+.active {
+    color: brown;
+    text-decoration: dotted;
+    font-weight: bold;
+}
+*/
+.navbar {
+    display: flex;
+    padding: 1px;
+    position: inherit;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    color: rgb(1, 255, 56);
+}
+
+.nav-links li{
+    margin: 0 15px;
+    position: relative;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    color: brown;
+}
+
+.nav-links li:hover {
+   background-color: rgba(28, 9, 234, 0.2);
+}
+
+.nav-links li a {
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+.nav-links .active{
+    color: brown;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(pexels-apasaric-325185.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5 ease;
+}
+
+/* Unit-1 header */
+h4 {
+    font-size: 9vmin;
+    text-align:center;
+    color: brown;
+}
+@keyframes slide-in{
+    from{
+        opacity: 0;
+        transform: translateY(100px);/*here we are adjusting for different entry effects*/
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+header.unit-2header{
+    animation: slide-in 1s ease-out;/*here we are adjusting duration and easing */
+    background-image: url(pexels-lum3n-44775-316466.jpg);
+   background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.scroll-watcher{
+    height: 10px;
+    position:fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: yellow;
+    width: 0;
+    transition: width 0.50s ease-out;
+}
+header.unit-1header{
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+header.unit-1header{
+    opacity: 1;
+}
+.client-server{
+    background-color: black;
+    background-image: none;
+    color: white;
+    align-items: center;
+
+}
+.bright:hover{
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px white(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px white(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS and CSS3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('pexels-ivan-rafikov-3221098.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #222;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        p {
+            animation: fadeIn 2s ease-in-out;
+            margin: 20px 0;
+            color: #222;
+        }
+
+        table, th, td {
+            border: 1px solid brown;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+            width: 50%;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            animation: slideIn 1.5s ease-in-out;
+            height: 50px;
+            margin: 0%;
+            margin-left: 80px;
+        }
+
+        th {
+            background-color: brown;
+            color: white;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction to CSS and CSS3</h1>
+
+    <section>
+        <h2>What is CSS?</h2>
+        <p>CSS, or Cascading Style Sheets, is a stylesheet language used to describe the presentation of a document written in HTML or XML. CSS allows you to control the layout, colors, fonts, and other visual aspects of a webpage. Without CSS, webpages would be unstyled and difficult to read.</p>
+    </section>
+
+    <section>
+        <h2>CSS vs CSS2 vs CSS3</h2>
+        <p>CSS has evolved over time. CSS2 was released in 1998, and CSS3 was released in 1999. While CSS3 builds on the features of CSS and CSS2, it also includes new features and improvements.</p>
+        <ul>
+            <li><strong>Selectors:</strong> CSS3 introduced new selectors, such as the attribute selector, the nth-child selector, and the adjacent sibling selector, that allow you to select specific elements more easily.</li>
+            <li><strong>Box Model:</strong> The box model determines how elements are sized and spaced on a webpage. CSS2 introduced a new box model which included padding, borders, and margins. CSS3 introduced the flexible box layout module, which allows for more flexible layouts.</li>
+            <li><strong>Animations and Transitions:</strong> CSS3 introduced new animation and transition properties, such as transition, animation, and keyframes, which allow for more dynamic and engaging web designs.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>New Features of CSS3</h2>
+        <p>CSS3 brought a lot of new features and capabilities to web design, making it easier to create visually stunning and interactive web pages. Some of the new features include:</p>
+        <ul>
+            <li><strong>Combinator:</strong> CSS3 introduces a new general sibling combinator, which matches sibling elements using the tilde (~) combinator.</li>
+            <li><strong>CSS Selectors:</strong> CSS3 selectors are more advanced than the simple selectors offered by CSS, providing a sequence of easy-to-use and simple selectors.</li>
+            <li><strong>Pseudo-elements:</strong> CSS3 adds many new pseudo-elements for easier and more detailed styling. The new convention of double colons (::) is also introduced.</li>
+            <li><strong>Border Style:</strong> CSS3 includes new border styling features like border-radius, border-image-slice, border-image-source, and values for “width stretch”.</li>
+            <li><strong>Background Style Properties:</strong> CSS3 introduces new background style properties such as background-clip, background-size, background-style, and background-origin.</li>
+            <li><strong>Flexbox:</strong> A new layout module that allows for more efficient and manageable layouts.</li>
+            <li><strong>Grid:</strong> CSS Grid Layout allows web designers to create complex and responsive grid-based layouts with ease.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Difference between CSS and CSS3</h2>
+        <table>
+            <tr>
+                <th>CSS</th>
+                <th>CSS3</th>
+            </tr>
+            <tr>
+                <td>Capable of positioning texts and objects.</td>
+                <td>Capable of making web pages more attractive and takes less time to create. It is backward compatible with CSS.</td>
+            </tr>
+            <tr>
+                <td>Does not support responsive design.</td>
+                <td>Supports responsive design.</td>
+            </tr>
+            <tr>
+                <td>Cannot be split into modules.</td>
+                <td>Can be broken down into modules.</td>
+            </tr>
+            <tr>
+                <td>Cannot build 3D animation and transformation.</td>
+                <td>Supports animation and 3D transformations.</td>
+            </tr>
+            <tr>
+                <td>Limited support for media queries.</td>
+                <td>Extensive support for media queries, enabling better responsiveness across different devices.</td>
+            </tr>
+            <tr>
+                <td>No support for custom fonts.</td>
+                <td>Supports custom fonts through @font-face, allowing designers to use any font on a webpage.</td>
+            </tr>
+            <tr>
+                <td>Basic support for opacity and transparency.</td>
+                <td>Advanced opacity and transparency features, including RGBA and HSLA color models.</td>
+            </tr>
+            <tr>
+                <td>Simple and limited user interface styling.</td>
+                <td>Advanced UI styling with features like rounded corners, shadows, gradients, and transitions.</td>
+            </tr>
+            <tr>
+                <td>Does not support grid layouts.</td>
+                <td>Supports CSS Grid Layout for creating complex, grid-based designs.</td>
+            </tr>
+            <tr>
+                <td>Does not support custom animations.</td>
+                <td>Supports custom animations with keyframes and other advanced animation features.</td>
+            </tr>
+            <tr>
+                <td>Limited control over element alignment.</td>
+                <td>Advanced control over alignment with Flexbox and CSS Grid, offering more precise and flexible layouts.</td>
+            </tr>
+            <tr>
+                <td>No native support for media-specific styles.</td>
+                <td>Allows media-specific styles using media queries to create responsive designs.</td>
+            </tr>
+            <tr>
+                <td>Limited pseudo-class and pseudo-element support.</td>
+                <td>Extended pseudo-class and pseudo-element support, providing more styling possibilities.</td>
+            </tr>
+            <tr>
+                <td>No support for multi-column layouts.</td>
+                <td>Supports multi-column layouts, allowing content to be displayed in multiple columns.</td>
+            </tr>
+            <tr>
+                <td>Minimal support for web typography.</td>
+                <td>Advanced web typography support, including custom fonts, text shadows, and more.</td>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>

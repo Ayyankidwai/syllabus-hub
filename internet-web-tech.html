@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet and Web Technologies</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .hero {
+            background: linear-gradient(135deg, #007bff, #00bfae);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            margin-top: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section {
+            background: #fff;
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            font-size: 2rem;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+        .section h2:hover {
+            color: #0056b3;
+        }
+        .section p {
+            margin: 0;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+        .section ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+        .section a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .section a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #007bff;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        .card h3:hover {
+            color: #0056b3;
+        }
+        .card p {
+            margin-bottom: 15px;
+        }
+        footer {
+            background: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 20px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Internet and Web Technologies</h1>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h1>World of Web Technologies</h1>
+            <p>Here we will learn about the essential technologies that power the internet and modern web applications.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="section" id="introduction">
+            <h2>Introduction</h2>
+            <p>The internet and web technologies are fundamental to the digital age, shaping how we communicate, work, and interact online. This page provides a comprehensive overview of these technologies, including their evolution, key components, and impact on our daily lives.</p>
+            <p>From the basics of how the internet functions to the latest in web development practices, this guide offers valuable insights into the world of digital technology.</p>
+        </section>
+
+        <section class="section" id="internet">
+            <h2>The Internet</h2>
+            <p>The internet is a vast network of interconnected computers and servers that communicate using standardized protocols. It serves as the backbone of digital communication and information exchange.</p>
+            <p>Key elements of the internet include:</p>
+            <ul>
+                <li><strong>IP Addresses:</strong> Unique identifiers for each device connected to the network.</li>
+                <li><strong>Domain Name System (DNS):</strong> Translates domain names into IP addresses to facilitate access to websites.</li>
+                <li><strong>Routers and Switches:</strong> Direct data traffic between devices and networks.</li>
+                <li><strong>Data Centers:</strong> Facilities that store and manage data, hosting websites and applications.</li>
+            </ul>
+            <p>Understanding these components helps in grasping how data is transmitted and how various internet services are provided.</p>
+        </section>
+
+        <section class="section" id="web-technologies">
+            <h2>Web Technologies</h2>
+            <p>Web technologies are the tools and standards used to build and maintain websites and web applications. These include programming languages, frameworks, and design principles that contribute to the creation of modern, interactive web experiences.</p>
+            <div class="card-container">
+                <div class="card">
+                    <h3>HTML (HyperText Markup Language)</h3>
+                    <p>HTML forms the foundation of web pages by defining their structure. It uses tags to delineate headings, paragraphs, links, and other elements. HTML5 introduces new elements for better semantics and multimedia support.</p>
+                </div>
+                <div class="card">
+                    <h3>CSS (Cascading Style Sheets)</h3>
+                    <p>CSS is used to style HTML elements, controlling layout, colors, and fonts. CSS3 adds advanced features such as animations, transitions, and grid layouts, enabling responsive and attractive web designs.</p>
+                </div>
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>JavaScript is a versatile scripting language that brings interactivity to websites. It allows developers to create dynamic content, handle events, and interact with server-side technologies through AJAX and APIs.</p>
+                </div>
+                <div class="card">
+                    <h3>APIs (Application Programming Interfaces)</h3>
+                    <p>APIs enable different software systems to communicate. They allow integration with third-party services, such as payment processors and social media platforms, enhancing the functionality of web applications.</p>
+                </div>
+                <div class="card">
+                    <h3>Responsive Design</h3>
+                    <p>Responsive design ensures websites work well on a variety of devices and screen sizes. Techniques include fluid grids, flexible images, and media queries to adapt layouts to different viewing contexts.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="applications">
+            <h2>Real-World Applications</h2>
+            <p>Web technologies are applied in numerous ways to enhance user experience and functionality. Some key applications include:</p>
+            <ul>
+                <li><strong>E-Commerce:</strong> Online shopping platforms use web technologies to provide a seamless purchasing experience, manage inventory, and process transactions.</li>
+                <li><strong>Social Media:</strong> Social networking sites leverage HTML, CSS, and JavaScript to enable user interaction

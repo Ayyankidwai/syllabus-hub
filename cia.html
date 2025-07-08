@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b); 
+            padding: 20px;
+            color: white;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        header:hover {
+            background: linear-gradient(135deg , #feb47b, #1d1e1d); 
+        }
+
+        h1.logo {
+            font-size: 2.5rem;
+            margin: 10px 0;
+            animation: fadeInDown 1s ease;
+        }
+
+        h4#UnitHeader {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            animation: fadeInUp 1s ease;
+        }
+        .nav-links ol {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .nav-links ol li {
+            margin: 10px;
+            list-style-type: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+            background-color: #4facfe; /* Blue Gradient */
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        .nav-links a:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background-color: rgba(255, 255, 255, 0.15);
+            transition: width 0.4s ease-in-out, height 0.4s ease-in-out, top 0.4s ease-in-out, left 0.4s ease-in-out;
+            border-radius: 50%;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+        }
+        .nav-links a:hover:before {
+            width: 0;
+            height: 0;
+            top: 50%;
+            left: 50%;
+        }
+
+        .nav-links a:hover {
+            background-color: #00f2fe; 
+            transform: scale(1.1);
+        }
+        .scroll-watcher {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(135deg, #43e97b, #38f9d7); 
+            animation: scrollProgress 10s linear infinite;
+        }
+
+        @keyframes scrollProgress {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scroll-watcher"></div>
+    <header class="unit-1header">
+        <div>
+            <h4 id="UnitHeader">UNIT-1</h4>
+            <h1 class="logo">WEB TECHNOLOGIES AND HTML5</h1>
+            <ul class="nav-links">
+                <ol>
+                    <li><a href="http://127.0.0.1:5500/internet-web-tech.html">Internet and web tech</a></li>
+                    <li><a href="http://127.0.0.1:5500/Client-server.html">Client/Server model</a></li>
+                    <li><a href="http://127.0.0.1:5500/web-search-engine.html">Web Search Engine</a></li>
+                    <li><a href="http://127.0.0.1:5500/web-crawler.html">Web Crawler</a></li>
+                    <li><a href="http://127.0.0.1:5500/web-indexing.html">Web Indexing</a></li>
+                    <li><a href="http://127.0.0.1:5500/search-engine-optimization.html">Search Engine Optimization</a></li>
+                    <li><a href="http://127.0.0.1:5500/web-service.html">Web Services</a></li>
+                    <li><a href="http://127.0.0.1:5500/mobile-web.html">Mobile Web</a></li>
+                    <li><a href="http://127.0.0.1:5500/features-of-wev3.0.html">Features of Web 3.0</a></li>
+                    <li><a href="http://127.0.0.1:5500/html5.html">HTML5</a></li>
+                    <li><a href="http://127.0.0.1:5500/editor-and-browser.html#compatibility" style="text-decoration: none;">Editor and Browsers supported by HTML5</a></li>
+                    <li><a href="http://127.0.0.1:5500/html5-element.html" style="text-decoration: none;">HTML Elements</a></li>
+                    <li><a href="http://127.0.0.1:5500/html-sematics.html#introduction" style="text-decoration: none;">HTML5 Semantics</a></li>
+                    <li><a href="http://127.0.0.1:5500/html-canvas.html" style="text-decoration: none;">HTML5 Canvas</a></li>
+                    <li><a href="http://127.0.0.1:5500/html-media.html" style="text-decoration: none;">HTML Media</a></li>
+                    <li><a href="http://127.0.0.1:5500/static.html">Introduction to CSS3 - CSS2 VS CSS3</a></li>
+                </ol>
+            </ul>
+        </div>    
+    </header>
+    <script src="./script.js"></script>
+</body>
+
+</html>

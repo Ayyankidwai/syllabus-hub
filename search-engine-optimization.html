@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine Optimization (SEO)</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #282c34;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #61dafb;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #282c34;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00468b;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #00468b;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        .cta {          /*CTA-CALL TO ACTION: It is used to encourage user experience */
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta a {
+            background-color: #00468b;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta a:hover {
+            background-color: #00274d;
+        }
+
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .features-grid {
+                flex-direction: column;
+            }
+
+            .feature-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Search Engine Optimization (SEO)</h1>
+    </header>
+
+    <nav>
+        <a href="#introduction">Introduction</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#techniques">SEO Techniques</a>
+        <a href="#tools">SEO Tools</a>
+        <a href="#future">Future of SEO</a>
+    </nav>
+
+    <div class="container">
+        <section id="introduction">
+            <h2>Introduction to SEO</h2>
+            <p>Search Engine Optimization (SEO) is the process of optimizing a website or web page to improve its visibility and ranking in search engine results pages (SERPs). SEO involves a combination of on-page and off-page strategies to ensure that a website meets the criteria set by search engines like Google, Bing, and Yahoo.</p>
+        </section>
+
+        <section id="benefits">
+            <h2>Benefits of SEO</h2>
+            <ul>
+                <li><strong>Increased Visibility:</strong> SEO helps your website rank higher in search engine results, making it more likely that potential customers will find you.</li>
+                <li><strong>More Traffic:</strong> Higher visibility typically leads to more website traffic, which can increase sales and conversions.</li>
+                <li><strong>Cost-Effective:</strong> Compared to paid advertising, SEO is a cost-effective way to drive organic traffic to your site over the long term.</li>
+                <li><strong>Improved User Experience:</strong> Good SEO practices enhance the usability and user experience of your website.</li>
+            </ul>
+        </section>
+
+        <section id="techniques">
+            <h2>Top SEO Techniques</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="keyword.png" alt="Keyword Research">
+                    <h3>Keyword Research</h3>
+                    <p>Identify the right keywords to target based on search volume, relevance, and competition. This forms the foundation of any SEO strategy.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="web-page.png" alt="On-Page SEO">
+                    <h3>On-Page SEO</h3>
+                    <p>Optimize individual pages on your website, including meta tags, headings, content, and images, to ensure they are search-engine friendly.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="link-building.png" alt="Link Building">
+                    <h3>Link Building</h3>
+                    <p>Build high-quality backlinks from reputable websites to improve your site’s authority and ranking in search results.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="service.png" alt="Technical SEO">
+                    <h3>Technical SEO</h3>
+                    <p>Ensure your website’s technical setup (like site speed, mobile-friendliness, and secure connections) is optimized for search engines.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="marketing.png" alt="Content Marketing">
+                    <h3>Content Marketing</h3>
+                    <p>Create high-quality, engaging content that attracts and retains your audience while meeting SEO best practices.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="analysis.png" alt="Analytics">
+                    <h3>Analytics</h3>
+                    <p>Monitor your SEO performance using tools like Google Analytics to refine your strategy and achieve better results.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools">
+            <h2>Essential SEO Tools</h2>
+            <ul>
+                <li><strong>Google Analytics:</strong> A powerful tool for tracking your website’s traffic, user behavior, and conversions.</li>
+                <li><strong>Google Search Console:</strong> Helps monitor your site’s performance in Google search results, providing insights into indexing and ranking.</li>
+                <li><strong>SEMrush:</strong> An all-in-one tool for keyword research, competitor analysis, and site audits.</li>
+                <li><strong>Ahrefs:</strong> Offers extensive backlink analysis and keyword research capabilities, crucial for effective link building.</li>
+                <li><strong>Moz:</strong> Provides various SEO tools, including keyword research, site audits, and link-building resources.</li>
+                <li><strong>Yoast SEO:</strong> A popular WordPress plugin for optimizing on-page SEO elements.</li>
+            </ul>
+        </section>
+
+        <section id="future">
+            <h2>The Future of SEO</h2>
+            <p>The future of SEO is shaped by the continuous evolution of search engines and user behavior. With the rise of AI, machine learning, and voice search, SEO strategies must adapt to focus more on user intent and context. Additionally, mobile-first indexing and the increasing importance of video content will require SEO
